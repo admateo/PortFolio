@@ -167,11 +167,11 @@ footer img{
 
 @media (min-width: 1001px) {
 	footer span{
-		margin-left: 65px;
+		margin-left: 85px;
 	}
 
 	footer img{
-		margin-right: 65px;
+		margin-right: 85px;
 	}
 
 	#enviar{
