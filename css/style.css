@@ -48,7 +48,7 @@ h1{
 }
 
 #primera_seccion div{
-	margin-top: 8%;
+	margin-top: 30px;
 }
 
 section h2{
@@ -68,7 +68,7 @@ h2{
 	height: 150px;
 	width: 140px;
 	border-radius: 75px;
-	box-shadow: 0px 2px 14px 0px rgba(0,0,0,0.75)
+	box-shadow: 0px 2px 14px 0px rgba(0,0,0,0.75);
 }
 
 #informacion_personal{
@@ -84,6 +84,11 @@ h2{
 	height: 150px;
 	width: 150px;
 	padding: 10px 17px;
+	transition: 0.4s all;
+}
+
+#lenguajes img:hover{
+	transform: scale(1.05);
 }
 
 form input{
@@ -132,7 +137,7 @@ form textarea:focus:valid{
 	background-color: #212121;
 	color: white;
 	letter-spacing: 1px;
-	margin-bottom: 15px;
+	margin-bottom: 10px;
 	border-radius: 5px;
 	text-shadow: 0px 1px 0px rgba(0,0,0,0.5);
 	box-shadow: -2px 2px 2px rgba(0,0,0,0.7);
@@ -153,15 +158,19 @@ footer{
 }
 
 footer span{
-	margin-top: 25px;
+	margin-top: 15px;
 	margin-left: 25px;
 }
 
 footer img{
-	margin-top: 10px;
 	margin-right: 25px;
 	width: 50px;
 	height: 50px;
+	transition: 0.4s all;
+}
+
+footer img:hover{
+	transform: scale(1.1);
 }
 
 @media (min-width: 600px) and (max-width: 1000px) {
@@ -176,11 +185,19 @@ footer img{
 
 @media (min-width: 1001px) {
 	footer span{
-		margin-left: 85px;
+		margin-left: 95px;
 	}
 
 	footer img{
-		margin-right: 85px;
+		margin-right: 95px;
+	}
+
+	form input{
+		width: 85%;
+	}
+
+	form textarea{
+		width: 85%;
 	}
 
 	#enviar{
