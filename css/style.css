@@ -44,22 +44,9 @@ h1{
 }
 
 
-#primera_seccion div{
+#primera_seccion > div{
 	margin-top: 30px;
-	margin-bottom: 20px;
-}
-
-section h2{
-	background-color: #212121;
-	color: white;
-	margin-bottom: 20px;
-}
-
-h2{
-	font-family: 'Lobster', cursive;
-	font-size: 2rem;
-	margin: 0;
-	padding: 20px 10px;
+	margin-bottom: 10px;
 }
 
 #foto_personal{
@@ -72,6 +59,15 @@ h2{
 #informacion_personal{
 	text-align: center;
 	padding: 0 10px;
+}
+
+#informacion_personal div img{
+	margin-left: 25px;
+	transition: 0.4s all;
+}
+
+#informacion_personal div img:hover{
+	transform: scale(1.1);
 }
 
 #lenguajes{
@@ -87,6 +83,19 @@ h2{
 
 #lenguajes img:hover{
 	transform: scale(1.05);
+}
+
+section h2{
+	background-color: #212121;
+	color: white;
+	margin-bottom: 20px;
+}
+
+h2{
+	font-family: 'Lobster', cursive;
+	font-size: 2rem;
+	margin: 0;
+	padding: 20px 10px;
 }
 
 form input{
@@ -150,7 +159,7 @@ form textarea:focus:valid{
 }
 
 footer{
-	padding: 23px 0;
+	padding: 17px 0;
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: space-between;
