@@ -1,9 +1,18 @@
+@font-face {
+	font-family: Lobster;
+	src: url(../fonts/Lobster-Regular.ttf);
+}
+
+@font-face {
+	font-family: SourceSansPro;
+	src: url(../fonts/SourceSansPro-Regular.ttf);
+}
+
 body, html{
 	text-align: center;
 	height: 100%;
   	margin: 0;
-  	font-family: 'Source Sans Pro', sans-serif;
-
+  	font-family: 'SourceSansPro', sans-serif;
 }
 
 header{
