@@ -61,29 +61,106 @@ h1{
 	padding: 0 10px;
 }
 
-#informacion_personal div img{
-	margin-left: 25px;
-	transition: 0.4s all;
-}
-
-#informacion_personal div img:hover{
-	transform: scale(1.1);
+#informacion_personal div a{
+	margin: 0 20px;
 }
 
 #lenguajes{
+	display: grid;
+	grid-template-columns: 1fr;
 	margin-bottom: 10px;
 }
 
-#lenguajes img{
-	height: 150px;
-	width: 150px;
+#habilidad img{
+	height: 50px;
+	width: 50px;
 	padding: 10px 17px;
 	transition: 0.4s all;
 }
 
 #lenguajes img:hover{
-	transform: scale(1.05);
+	transform: scale(1.1);
 }
+
+#habilidad{
+	display: flex;
+	flex-flow: row;
+}
+
+a{
+	margin-right: 10px;
+	display: inline-block;
+}
+
+#habilidadTotal{
+	height: 19px;
+	border: 1px solid #EEEEEE;
+	margin-right: 20px;
+	margin-top: 25px;
+	width: 100%;
+}
+
+#porcentajeIonic{
+	color: white;
+	background-color: #212121;
+	width: 80%;
+}
+
+#porcentajeAndroid{
+	color: white;
+	background-color: #212121;
+	width: 60%;
+}
+
+#porcentajeSymfony{
+	color: white;
+	background-color: #212121;
+	width: 40%;
+}
+
+#porcentajeHtml{
+	color: white;
+	background-color: #212121;
+	width: 90%;
+}
+
+#porcentajeJQuery{
+	color: white;
+	background-color: #212121;
+	width: 70%;
+}
+
+#proyectos{
+	display: flex;
+	flex-flow: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+#tarjeta{
+	box-shadow: -3px 3px 11px -1px rgba(0,0,0,0.75);
+	display: inline-block;
+	border: 1px solid;
+	margin: 0 20px;
+	margin-bottom: 20px;
+}
+
+#tarjeta a{
+	margin: 0;
+}
+
+#tarjeta p{
+	margin: 0;
+	padding: 5px 0;
+	background-color: #212121;
+	color: white;
+}
+
+#tarjeta img{
+	height: 150px;
+	width: 310px;
+}
+
 
 section h2{
 	background-color: #212121;
@@ -159,7 +236,7 @@ form textarea:focus:valid{
 }
 
 footer{
-	padding: 17px 0;
+	padding: 14px 0;
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: space-between;
@@ -182,6 +259,11 @@ footer img:hover{
 }
 
 @media (min-width: 600px) and (max-width: 1000px) {
+	#lenguajes{
+		margin: 0 20px;
+		grid-template-columns: repeat(2, 1fr);
+	}
+
 	footer span{
 		margin-left: 45px;
 	}
@@ -193,8 +275,9 @@ footer img:hover{
 
 @media (min-width: 1001px) {
 
-	#primera_seccion{
-		height: 100%;
+	#lenguajes{
+		margin: 0 20px;
+		grid-template-columns: repeat(3, 1fr);
 	}
 	
 	footer span{
