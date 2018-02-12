@@ -65,6 +65,14 @@ h1{
 	margin: 0 20px;
 }
 
+#informacion_personal div a img{
+	transition: 0.4s all;
+}
+
+#informacion_personal div a img:hover{
+	transform: scale(1.1);
+}
+
 #lenguajes{
 	display: grid;
 	grid-template-columns: 1fr;
